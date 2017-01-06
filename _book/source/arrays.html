@@ -1,0 +1,528 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.陣列 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="regexp.html" />
+    
+    
+    <link rel="prev" href="inheritance.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="good_parts.html">
+            
+                <a href="good_parts.html">
+            
+                    
+                    1.優良部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="grammar.html">
+            
+                <a href="grammar.html">
+            
+                    
+                    2.文法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="objects.html">
+            
+                <a href="objects.html">
+            
+                    
+                    3.物件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    4.函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="inheritance.html">
+            
+                <a href="inheritance.html">
+            
+                    
+                    5.繼承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="arrays.html">
+            
+                <a href="arrays.html">
+            
+                    
+                    6.陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="regexp.html">
+            
+                <a href="regexp.html">
+            
+                    
+                    7.正規運算式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="methods.html">
+            
+                <a href="methods.html">
+            
+                    
+                    8.方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="style.html">
+            
+                <a href="style.html">
+            
+                    
+                    9.風格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="bf.html">
+            
+                <a href="bf.html">
+            
+                    
+                    10.美的部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="awful.html">
+            
+                <a href="awful.html">
+            
+                    
+                    11.糟糕的部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="bad.html">
+            
+                <a href="bad.html">
+            
+                    
+                    12.不良的部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="jslint.html">
+            
+                <a href="jslint.html">
+            
+                    
+                    13.JSLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    14.JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6.陣列</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9663;&#x5217;-array"><center>&#x9663;&#x5217; Array<center></center></center></h1>
+<hr>
+<blockquote>
+<p>&#x9663;&#x5217;&#x662F;&#x8A18;&#x61B6;&#x9AD4;&#x7684;&#x4E00;&#x7A2E;&#x7DDA;&#x6027;&#x5206;&#x914D;&#x3002; &#x7D44;&#x4EF6;&#x6839;&#x64DA;&#x8A08;&#x7B97;&#x504F;&#x79FB;&#x91CF;(&#x6574;&#x6578;)&#x800C;&#x5B58;&#x53D6;&#x3002; &#x4F46;&#x5F88;&#x53EF;&#x60DC;&#xFF0C;<font color="red"><strong>javascript&#x6C92;&#x6709;&#x985E;&#x4F3C;&#x9663;&#x5217;&#x7684;&#x6771;&#x897F;</strong><font></font></font></p>
+</blockquote>
+<p>javascript&#x63D0;&#x4F9B;&#x4E86;<strong>&#x985E;&#x4F3C;</strong>&#x9663;&#x5217;&#x6027;&#x683C;&#x7684;object&#xFF0C;&#x5B83;&#x628A;&#x9663;&#x5217;&#x7D22;&#x5F15;&#x8F49;&#x63DB;&#x6210;&#x5B57;&#x4E32;&#xFF0C;&#x6BD4;&#x5BE6;&#x969B;&#x9663;&#x5217;&#x6162;&#xFF0C;&#x4F46;&#x66F4;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;&#x3002;  </p>
+<h3 id="&#x9663;&#x5217;&#x5BE6;&#x5B57;-array-literal"><strong>&#x9663;&#x5217;&#x5BE6;&#x5B57; array literal</strong></h3>
+<p>array literal&#x63D0;&#x4F9B;&#x4E00;&#x7A2E;&#x5EFA;&#x7ACB;&#x65B0;&#x9663;&#x5217;&#x66F4;&#x4FBF;&#x5229;&#x65B9;&#x5F0F;&#xFF0C;index&#x5F9E;0&#x958B;&#x59CB;&#x4F9D;&#x5E8F;&#x5F80;&#x5F8C;&#x52A0;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>] <span class="hljs-comment">// array literal&#x5BEB;&#x6CD5;</span>
+arr[<span class="hljs-number">0</span>]  <span class="hljs-comment">// 1</span>
+arr[<span class="hljs-number">1</span>]  <span class="hljs-comment">// 2</span>
+arr[<span class="hljs-number">2</span>]  <span class="hljs-comment">// 3</span>
+arr[<span class="hljs-number">3</span>]  <span class="hljs-comment">// 4</span>
+</code></pre>
+<p>array&#x8DDF;object&#x4E00;&#x6A23;&#xFF0C;&#x5141;&#x8A31;&#x591A;&#x7A2E;type&#x6DF7;&#x5408;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [<span class="hljs-string">&apos;string&apos;</span>,<span class="hljs-number">123</span>,<span class="hljs-literal">true</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">undefined</span>,[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>],{<span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;thomas&quot;</span>},<span class="hljs-literal">NaN</span>];
+</code></pre>
+<h3 id="length&#x65B9;&#x6CD5;"><strong>length&#x65B9;&#x6CD5;</strong></h3>
+<p>javascript&#x9663;&#x5217;&#x7684;length&#x4E0D;&#x6703;&#x51FA;&#x73FE;&#x9663;&#x5217;&#x4E0A;&#x9650;&#x7684;&#x932F;&#x8AA4;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5132;&#x5B58;&#x7684;&#x5143;&#x7D20;&#x5927;&#x65BC;&#x7B49;&#x65BC;&#x76EE;&#x524D;length&#x7684;index&#xFF0C;&#x5247;length&#x5C07;&#x88DC;&#x9F4A;&#x4E0D;&#x8DB3;&#x7684;index</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [] ;
+arr[<span class="hljs-number">10000</span>] = <span class="hljs-number">1</span> ;
+arr.length       <span class="hljs-comment">//10001</span>
+</code></pre>
+<h3 id="&#x522A;&#x9664;-delete"><strong>&#x522A;&#x9664; delete</strong></h3>
+<p>&#x65E2;&#x7136;javascript&#x7684;array&#x5176;&#x5BE6;&#x662F;object&#xFF0C;delete&#x904B;&#x7B97;&#x5B50;&#x5373;&#x53EF;&#x7528;&#x65BC;&#x79FB;&#x9664;&#x9663;&#x5217;&#x88E1;&#x7684;&#x5143;&#x7D20;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] ;
+<span class="hljs-keyword">delete</span> arr[<span class="hljs-number">2</span>] ;
+
+arr ;              <span class="hljs-comment">// [1, 2, undefined &#xD7; 1, 4, 5]</span>
+arr.length ;       <span class="hljs-comment">// 5</span>
+</code></pre>
+<p>&#x4E0D;&#x904E;&#x9019;&#x6A23;&#x505A;&#x6703;&#x8B93;array&#x7559;&#x4E0B;&#x7834;&#x6D1E;&#xFF0C;&#x6211;&#x5011;&#x901A;&#x5E38;&#x6703;&#x60F3;&#x628A;&#x9663;&#x5217;&#x5143;&#x7D20;&#x88DC;&#x6EFF;&#x88DC;&#x9F4A;&#xFF0C;&#x9019;&#x6642;&#x5C31;&#x53EF;&#x4EE5;&#x7528;splice()&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x522A;&#x9664;&#x67D0;&#x4E9B;&#x5143;&#x7D20;&#x4E26;&#x4EE5;&#x5176;&#x4ED6;&#x5143;&#x7D20;&#x4EE3;&#x66FF;&#x3002;</p>
+<ul>
+<li>splice() &#x9808;&#x8F38;&#x5165;&#x5169;&#x500B;&#x53C3;&#x6578;&#xFF0C;&#x7B2C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x662F;&#x6B32;&#x522A;&#x9664;&#x5143;&#x7D20;&#x7684;index&#xFF0C;&#x7B2C;&#x4E8C;&#x500B;&#x53C3;&#x6578;&#x662F;&#x6B32;&#x522A;&#x9664;&#x6578;&#x91CF;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] ;
+arr.splice(<span class="hljs-number">2</span>,<span class="hljs-number">1</span>) ;       
+
+arr ;                     <span class="hljs-comment">// [1, 2, 4, 5]</span>
+arr.length ;              <span class="hljs-comment">// 4</span>
+</code></pre>
+<h3 id="&#x5217;&#x8209;-reflect"><strong>&#x5217;&#x8209; reflect</strong></h3>
+<p>&#x8981;&#x53D6;&#x9663;&#x5217;&#x5143;&#x7D20;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x7528;for in (&#x56E0;&#x70BA;&#x9663;&#x5217;&#x662F;object &#x6240;&#x4EE5;&#x4E5F;&#x6709;for in&#x7684;&#x65B9;&#x6CD5;)</p>
+<ul>
+<li>&#x4E0D;&#x904E;good parts&#x63A8;&#x85A6;&#x4F7F;&#x7528;for loop&#x505A;&#x9019;&#x4EF6;&#x4E8B;&#x60C5;&#xFF0C;&#x56E0;&#x70BA;for in&#x6703;&#x6709;&#x9806;&#x5E8F;&#x4E0D;&#x4F9D;&#x7684;&#x73FE;&#x8C61;&#x767C;&#x751F;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span> ; i&lt;= arr.length ; i++){
+  <span class="hljs-built_in">console</span>.log(arr[i]) ;
+}
+ <span class="hljs-comment">// 1</span>
+ <span class="hljs-comment">// 2</span>
+ <span class="hljs-comment">// 3</span>
+ <span class="hljs-comment">// 4</span>
+ <span class="hljs-comment">// 5</span>
+</code></pre>
+<h3 id="&#x56F0;&#x60D1;&#x4E4B;&#x8655;"><strong>&#x56F0;&#x60D1;&#x4E4B;&#x8655;</strong></h3>
+<p>javascript&#x7A0B;&#x5F0F;&#x7684;&#x5E38;&#x898B;&#x932F;&#x8AA4;&#x4E4B;&#x4E00;&#xFF0C;<strong><font color="red">&#x8A72;&#x7528;&#x9663;&#x5217;&#x7684;&#x6642;&#x5019;&#x7528;&#x7269;&#x4EF6;&#xFF0C;&#x8A72;&#x7528;&#x7269;&#x4EF6;&#x7684;&#x6642;&#x5019;&#x7528;&#x9663;&#x5217;<font></font></font></strong>&#x3002;  </p>
+<ul>
+<li><strong>&#x898F;&#x5247;&#x7C21;&#x55AE; : &#x7576;property name&#x662F;&#x9023;&#x7E8C;&#x6574;&#x6578;&#x5C31;&#x7528;&#x9663;&#x5217; ; &#x9664;&#x6B64;&#x4E4B;&#x5916;&#x7686;&#x7528;&#x7269;&#x4EF6;</strong></li>
+</ul>
+<p>javascript&#x6C92;&#x6709;&#x5F88;&#x597D;&#x7684;&#x9663;&#x5217;&#x8207;&#x7269;&#x4EF6;&#x5340;&#x5206;&#x6A5F;&#x5236;&#x3002;&#x6240;&#x4EE5;&#x786C;&#x8981;&#x5340;&#x5206;&#x7684;&#x8A71;&#xFF0C;&#x4E5F;&#x662F;&#x6709;&#x8FA6;&#x6CD5;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [] ;
+<span class="hljs-keyword">var</span> obj = {} ;
+<span class="hljs-keyword">var</span> is_array = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+    <span class="hljs-keyword">return</span> value &amp;&amp;
+        <span class="hljs-keyword">typeof</span> value === <span class="hljs-string">&apos;object&apos;</span> &amp;&amp;       
+        <span class="hljs-keyword">typeof</span> value.length === <span class="hljs-string">&apos;number&apos;</span> &amp;&amp;
+        <span class="hljs-keyword">typeof</span> value.splice === <span class="hljs-string">&apos;function&apos;</span>
+};
+is_array(arr) ;    <span class="hljs-comment">// true</span>
+is_array(obj) ;    <span class="hljs-comment">// false</span>
+</code></pre>
+<h3 id="&#x9663;&#x5217;&#x7DAD;&#x5EA6;"><strong>&#x9663;&#x5217;&#x7DAD;&#x5EA6;</strong></h3>
+<p>javascirpt&#x9663;&#x5217;&#x901A;&#x5E38;&#x4E26;&#x672A;&#x521D;&#x59CB;&#x5316;(initialization)&#xFF0C;&#x5982;&#x679C;&#x914D;&#x7F6E;&#x4E00;&#x500B;&#x65B0;&#x9663;&#x5217;&#xFF0C;&#x5B83;&#x5C07;&#x662F;&#x7A7A;&#x7684;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x5982;&#x679C;&#x60F3;&#x914D;&#x7F6E;&#x6BCF;&#x500B;&#x5143;&#x7D20;&#x90FD;&#x4EE5;&#x5DF2;&#x77E5;&#x503C;&#x958B;&#x59CB;&#x7684;&#x9663;&#x5217;(&#x4F8B;&#x5982;0)&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5617;&#x8A66;&#x7528;&#x4EE5;&#x4E0B;&#x9663;&#x5217;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> dimen = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">dimension, initial</span>)
+</span>{
+  <span class="hljs-keyword">var</span> a = [] , i ;
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span> ; i &lt; dimension ; i++)
+    {
+      a[i] = initial ;
+    }
+  <span class="hljs-keyword">return</span> a ;
+}
+
+dimen(<span class="hljs-number">10</span>,<span class="hljs-number">0</span>)      <span class="hljs-comment">// [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</span>
+</code></pre>
+<p>javascript&#x53EF;&#x5177;&#x6709;&#x4EE5;&#x9663;&#x5217;&#x7D44;&#x6210;&#x7684;&#x9663;&#x5217; :  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [
+    [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],
+    [<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>],
+    [<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">9</span>]
+]
+
+arr[<span class="hljs-number">1</span>][<span class="hljs-number">2</span>]     <span class="hljs-comment">// 6</span>
+</code></pre>
+<p>&#x6240;&#x4EE5;&#x5982;&#x679C;&#x60F3;&#x914D;&#x7F6E;&#x6BCF;&#x500B;&#x5143;&#x7D20;&#x90FD;&#x4EE5;&#x5DF2;&#x77E5;&#x503C;&#x958B;&#x59CB;&#x7684;&#x4E8C;&#x7DAD;&#x9663;&#x5217;(&#x4F8B;&#x5982;0)&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5617;&#x8A66;&#x7528;&#x4EE5;&#x4E0B;&#x9663;&#x5217;&#x914D;&#x7F6E;  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">m, n, initial</span>) </span>{
+    <span class="hljs-keyword">var</span> a, i, j, mat = [];
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; m; i += <span class="hljs-number">1</span>) {
+        a = [];
+        <span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>; j &lt; n; j += <span class="hljs-number">1</span>) {
+            a[j] = initial;
+        }
+        mat[i] = a;
+    }
+    <span class="hljs-keyword">return</span> mat;
+};
+
+arr(<span class="hljs-number">4</span>,<span class="hljs-number">4</span>,<span class="hljs-number">0</span>)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="inheritance.html" class="navigation navigation-prev " aria-label="Previous page: 5.繼承">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="regexp.html" class="navigation navigation-next " aria-label="Next page: 7.正規運算式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.陣列","level":"1.7","depth":1,"next":{"title":"7.正規運算式","level":"1.8","depth":1,"path":"source/regexp.md","ref":"source/regexp.md","articles":[]},"previous":{"title":"5.繼承","level":"1.6","depth":1,"path":"source/inheritance.md","ref":"source/inheritance.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"source/arrays.md","mtime":"2017-01-06T04:11:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-06T05:56:57.586Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

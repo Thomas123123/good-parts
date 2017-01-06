@@ -1,0 +1,679 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.文法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="objects.html" />
+    
+    
+    <link rel="prev" href="good_parts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="good_parts.html">
+            
+                <a href="good_parts.html">
+            
+                    
+                    1.優良部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="grammar.html">
+            
+                <a href="grammar.html">
+            
+                    
+                    2.文法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="objects.html">
+            
+                <a href="objects.html">
+            
+                    
+                    3.物件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    4.函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="inheritance.html">
+            
+                <a href="inheritance.html">
+            
+                    
+                    5.繼承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="arrays.html">
+            
+                <a href="arrays.html">
+            
+                    
+                    6.陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="regexp.html">
+            
+                <a href="regexp.html">
+            
+                    
+                    7.正規運算式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="methods.html">
+            
+                <a href="methods.html">
+            
+                    
+                    8.方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="style.html">
+            
+                <a href="style.html">
+            
+                    
+                    9.風格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="bf.html">
+            
+                <a href="bf.html">
+            
+                    
+                    10.美的部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="awful.html">
+            
+                <a href="awful.html">
+            
+                    
+                    11.糟糕的部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="bad.html">
+            
+                <a href="bad.html">
+            
+                    
+                    12.不良的部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="jslint.html">
+            
+                <a href="jslint.html">
+            
+                    
+                    13.JSLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    14.JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.文法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6587;&#x6CD5;-grammar"><center>&#x6587;&#x6CD5; Grammar<center></center></center></h1>
+<hr>
+<h3 id="&#x7A7A;&#x683C;-whitespace"><strong>&#x7A7A;&#x683C; Whitespace</strong></h3>
+<pre><code class="lang-js">varthat=<span class="hljs-keyword">this</span> ;    <span class="hljs-comment">// false</span>
+<span class="hljs-keyword">var</span> that=<span class="hljs-keyword">this</span> ;   <span class="hljs-comment">// true</span>
+<span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span> ; <span class="hljs-comment">// true</span>
+</code></pre>
+<p>var&#x8207;that&#x9593;&#x7684;&#x7A7A;&#x683C;&#x4E0D;&#x53EF;&#x79FB;&#x9664;&#xFF0C;&#x4F46;&#x5176;&#x4ED6;&#x7A7A;&#x683C;&#x82E5;&#x62FF;&#x6389;&#x4E5F;&#x7121;&#x6240;&#x8B02;.</p>
+<h3 id="&#x8A3B;&#x89E3;-annotation"><strong>&#x8A3B;&#x89E3; annotation</strong></h3>
+<h5 id="javascript&#x8A3B;&#x89E3;&#x5F62;&#x5F0F;&#x6709;&#x5169;&#x7A2E;-">javascript&#x8A3B;&#x89E3;&#x5F62;&#x5F0F;&#x6709;&#x5169;&#x7A2E; :</h5>
+<p>&#x5340;&#x584A;&#x4F7F;&#x7528; /*content*/<br>&#x55AE;&#x884C;&#x4F7F;&#x7528; //content  </p>
+<ul>
+<li><strong>&#x5340;&#x584A;&#x8A3B;&#x89E3;&#x82E5;&#x9047;regexp &#x9700;&#x5C0F;&#x5FC3;&#x4F7F;&#x7528;</strong>  </li>
+</ul>
+<pre><code class="lang-js">/*
+    var rm_a = /a*/.match(s);  //&#x8A3B;&#x89E3;&#x5340;&#x584A;&#x4E0D;&#x6B63;&#x78BA;
+*/
+</code></pre>
+<h3 id="&#x540D;&#x7A31;-name"><strong>&#x540D;&#x7A31; Name</strong></h3>
+<p><font color="red">&#x540D;&#x7A31;&#x4E0D;&#x80FD;&#x7528;<strong>javscript&#x4FDD;&#x7559;&#x5B57;<strong>&#x4F86;&#x547D;&#x540D;<font><br>&#x82E5;&#x4E0D;&#x78BA;&#x5B9A;&#x662F;&#x5426;&#x6709;&#x4E0D;&#x5C0F;&#x5FC3;&#x7528;&#x5230;&#x4FDD;&#x7559;&#x5B57;&#xFF0C;&#x53EF;&#x5728;&#x540D;&#x7A31;&#x524D;&#x52A0;&#x4E0A;&#x5E95;&#x7DDA;</font></strong></strong></font></p>
+<h4 id="&#x4FDD;&#x7559;&#x5B57;-reserved-words"><center>&#x4FDD;&#x7559;&#x5B57; Reserved words</center></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">abstract</th>
+<th style="text-align:center">boolean</th>
+<th style="text-align:center">break</th>
+<th style="text-align:center">byte</th>
+<th style="text-align:center">case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">catch</td>
+<td style="text-align:center">char</td>
+<td style="text-align:center">class</td>
+<td style="text-align:center">const</td>
+<td style="text-align:center">continue</td>
+</tr>
+<tr>
+<td style="text-align:center">debugger</td>
+<td style="text-align:center">default</td>
+<td style="text-align:center">delete</td>
+<td style="text-align:center">do</td>
+<td style="text-align:center">double</td>
+</tr>
+<tr>
+<td style="text-align:center">else</td>
+<td style="text-align:center">enum</td>
+<td style="text-align:center">export</td>
+<td style="text-align:center">extends</td>
+<td style="text-align:center">false</td>
+</tr>
+</tbody>
+</table>
+<p>&#x540D;&#x7A31;&#x5927;&#x591A;&#x7528;&#x65BC;&#x6558;&#x8FF0;(statement)&#x3001;&#x8B8A;&#x6578;(variable)&#x3001;&#x53C3;&#x6578;(parameter)&#x3001;&#x7279;&#x6027;&#x540D;&#x7A31;(property name)&#x3001;&#x904B;&#x7B97;&#x5B50;(operator)&#x3001;&#x548C;&#x6A19;&#x7C64;(label)&#x3002;  </p>
+<h3 id="&#x6578;&#x503C;-number"><strong>&#x6578;&#x503C; Number</strong></h3>
+<p>javascript&#x53EA;&#x6709;&#x4E00;&#x500B;&#x6578;&#x503C;(<font color="red">number<font>)&#x578B;&#x5225;&#x3002;<br>&#x6BCF;&#x914D;&#x7F6E;&#x4E00;&#x500B;number&#x5C31;&#x9700;&#x914D;&#x7F6E;64bit(8&#x500B;byte)&#xFF0C;&#x76F8;&#x7576;&#x65BC;java&#x7684;double type&#x4E00;&#x6A23;&#x5927;&#x3002;<br>&#x4F46;&#x4E5F;&#x56E0;&#x53EA;&#x6709;&#x4E00;&#x7A2E;type&#xFF0C;1&#x8DDF;1.0&#x662F;&#x76F8;&#x7B49;&#x7684;&#x503C;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x907F;&#x514D;<font color="red">&#x77ED;&#x6574;&#x6578;&#x6EA2;&#x4F4D;<font>&#x3002;  </font></font></font></font></p>
+<h3 id="&#x5B57;&#x4E32;-string"><strong>&#x5B57;&#x4E32; String</strong></h3>
+<p>javascript&#x5EFA;&#x7ACB;&#x7684;&#x6642;&#x5019;&#xFF0C;Unicode&#x9084;&#x53EA;&#x662F;16&#x4F4D;&#x5143;&#x7684;&#x5B57;&#x5143;&#x96C6;&#xFF0C;&#x6240;&#x4EE5;javascript&#x6240;&#x6709;&#x5B57;&#x5143;&#x90FD;&#x70BA;16&#x4F4D;&#x5143;&#x9577;&#x5EA6;&#x7BC4;&#x570D;</p>
+<p>\ (&#x53CD;&#x659C;&#x7DDA;) &#x70BA;&#x8F49;&#x7FA9;&#x5B57;&#x5143;&#xFF0C;&#x53EF;&#x8655;&#x7406;&#x5B57;&#x4E32;&#x5167;&#x90E8;&#x4E00;&#x4E9B;&#x7279;&#x5B9A;&#x7B26;&#x865F;&#x6216;&#x5B57;&#x6BCD;&#x7684;&#x8F49;&#x7FA9;  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;\n&quot;</span>   <span class="hljs-comment">// &#x63DB;&#x884C;</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;\/&quot;</span>   <span class="hljs-comment">// &quot;/&quot;</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;\u0041&quot;</span>  <span class="hljs-comment">// &quot;A&quot;</span>
+</code></pre>
+<p>&#x5B57;&#x4E32;&#x88FD;&#x9020;&#x5F8C;&#x5C31;&#x518D;&#x4E5F;&#x7121;&#x6CD5;&#x6539;&#x8B8A;&#xFF0C;&#x4F46;&#x53EF;&#x5229;&#x7528; &quot;+&quot; &#x904B;&#x7B97;&#x5B50;&#x5C07;&#x5B57;&#x4E32;&#x8207;&#x5B57;&#x4E32;&#x76F8;&#x63A5;&#xFF0C;&#x5275;&#x9020;&#x51FA;&#x65B0;&#x5B57;&#x4E32;</p>
+<pre><code class="lang-js"><span class="hljs-string">&quot;c&quot;</span> + <span class="hljs-string">&quot;a&quot;</span> + <span class="hljs-string">&quot;t&quot;</span> === <span class="hljs-string">&quot;cat&quot;</span>  <span class="hljs-comment">// true</span>
+</code></pre>
+<h3 id="&#x6558;&#x8FF0;-statements"><strong>&#x6558;&#x8FF0; Statements</strong></h3>
+<p><strong>&#x6558;&#x8FF0;&#x53E5;</strong>  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span> , b = <span class="hljs-number">2</span> ;
+</code></pre>
+<p><strong><font color="red">&#x6558;&#x8FF0;&#x591A;&#x534A;&#x7531;&#x4E0A;&#x5F80;&#x4E0B;&#x57F7;&#x884C;<font></font></font></strong>&#x3002;&#x57F7;&#x884C;&#x9806;&#x5E8F;&#x80FD;&#x4F7F;&#x7528;&#x689D;&#x4EF6;&#x53E5;&#x6558;&#x8FF0;(if&#x548C;switch)&#x3001;&#x8FF4;&#x5708;&#x6558;&#x8FF0;(while&#x3001;for&#x3001;do)&#x3001;&#x4E2D;&#x65B7;&#x6027;&#x6558;&#x8FF0;(break&#x3001;return&#x3001;throw)&#x53CA;&#x51FD;&#x5F0F;&#x547C;&#x53EB;(function invocation)&#x800C;&#x7570;&#x52D5;&#x3002;  </p>
+<p>&#x5340;&#x584A;&#x662F;&#x4E00;&#x7D44;&#x4F7F;&#x7528;&#x5927;&#x62EC;&#x865F;( {} )&#x570D;&#x8D77;&#x7684;&#x6558;&#x8FF0;&#x3002;<strong><font color="red">&#x5340;&#x584A;&#x5EFA;&#x7ACB;&#x65B0;&#x7684;scope&#x5728;ES5&#x88E1;&#x4E0D;&#x6703;&#x7522;&#x751F;&#x7368;&#x7ACB;&#x4F5C;&#x7528;&#x57DF;<font></font></font></strong>&#xFF0C;&#x6240;&#x4EE5;&#x8B8A;&#x6578;&#x61C9;&#x8A72;&#x5B9A;&#x7FA9;&#x5728;&#x51FD;&#x5F0F;&#x9802;&#x7AEF;&#x3002;</p>
+<h3 id="&#x8FF4;&#x5708;&#x6558;&#x8FF0;&#x53E5;"><strong>&#x8FF4;&#x5708;&#x6558;&#x8FF0;&#x53E5;</strong></h3>
+<hr>
+<h4 id="if&#x8FF4;&#x5708;"><strong>if&#x8FF4;&#x5708;</strong></h4>
+<p>if&#x6558;&#x8FF0;&#x6703;&#x6839;&#x64DA;&#x904B;&#x7B97;&#x5F0F;&#x7684;&#x503C;&#x6539;&#x8B8A;&#x7A0B;&#x5F0F;&#x6D41;&#x5411;&#x3002;&#x82E5;&#x904B;&#x7B97;&#x5F0F;&#x7D50;&#x679C;&#x70BA;&#x771F;&#xFF0C;&#x5247;&#x57F7;&#x884C;then&#x5340;&#x584A;&#xFF0C;&#x5426;&#x5247;&#x57F7;&#x884C;else&#x5206;&#x652F;</p>
+<p>&#x4EE5;&#x4E0B;&#x70BA;falsy&#x7684;&#x503C; : </p>
+<ul>
+<li>false</li>
+<li>null</li>
+<li>undefined(&#x672A;&#x5B9A;&#x7FA9;)</li>
+<li>&quot;&quot; (&#x7A7A;&#x5B57;&#x4E32;)</li>
+<li>0</li>
+<li>NaN </li>
+</ul>
+<p><strong><font color="red">&#x6240;&#x6709;&#x5176;&#x4ED6;&#x503C;&#x90FD;&#x88AB;&#x8996;&#x70BA;true&#xFF0C;&#x5305;&#x62EC;ture&#x672C;&#x8EAB;&#xFF0C;&#x5B57;&#x4E32;&quot;false&quot;&#xFF0C;&quot;0&quot;&#x7B49;&#x3002;<font></font></font></strong>  </p>
+<h4 id="switch&#x8FF4;&#x5708;"><strong>switch&#x8FF4;&#x5708;</strong></h4>
+<p>switch&#x6558;&#x8FF0;&#x5448;&#x73FE;&#x591A;&#x5411;&#x5206;&#x652F;&#x3002;&#x904B;&#x7B97;&#x5F0F;&#x7522;&#x751F;&#x7684;&#x7D50;&#x679C;&#x53BB;&#x627E;&#x5230;&#x5B8C;&#x5168;&#x76F8;&#x7B26;&#x7684;case&#x4E26;&#x57F7;&#x884C;&#x8A72;case&#x4E0B;&#x7684;&#x6558;&#x8FF0;&#xFF0C;&#x82E5;&#x7121;&#x76F8;&#x7B26;&#x6848;&#x4F8B;&#x5247;&#x57F7;&#x884C;default&#x6558;&#x8FF0;&#x3002;  </p>
+<p><strong>case&#x5B50;&#x53E5;&#x5F8C;&#x7684;&#x6558;&#x8FF0;&#x61C9;&#x70BA;&#x4E2D;&#x65B7;&#x6027;&#x6558;&#x8FF0;&#xFF0C;&#x4EE5;&#x514D;&#x57F7;&#x884C;&#x5230;&#x4E0B;&#x4E00;&#x500B;case</strong>  </p>
+<h4 id="while&#x8FF4;&#x5708;"><strong>while&#x8FF4;&#x5708;</strong></h4>
+<p>while&#x6558;&#x8FF0;&#x8868;&#x9054;&#x4E00;&#x500B;&#x7C21;&#x55AE;&#x8FF4;&#x5708;&#x3002;&#x904B;&#x7B97;&#x5F0F;&#x7D50;&#x679C;&#x70BA;true&#xFF0C;&#x5247;&#x57F7;&#x884C;&#x5340;&#x584A;&#x78BC;&#xFF0C;&#x904B;&#x7B97;&#x5F0F;&#x7D50;&#x679C;&#x70BA;false,&#x5247;&#x8FF4;&#x5708;&#x4E2D;&#x65B7;&#x3002;  </p>
+<h4 id="for&#x8FF4;&#x5708;"><strong>for&#x8FF4;&#x5708;</strong></h4>
+<p>for&#x8FF4;&#x5708;&#x70BA;&#x8F03;&#x8907;&#x96DC;&#x7684;&#x8FF4;&#x5708;&#x3002;&#x5B83;&#x6709;&#x5169;&#x7A2E;&#x5F62;&#x5F0F;  </p>
+<ul>
+<li>&#x4E00;&#x7A2E;&#x70BA;&#x900F;&#x904E;&#x4E09;&#x500B;&#x9078;&#x7528;&#x5B50;&#x53E5;&#x63A7;&#x5236; : &#x521D;&#x59CB;&#x53E5;(initialization)&#x3001;&#x689D;&#x4EF6;&#x53E5;(condition)&#x3001;&#x905E;&#x589E;&#x53E5;(increment)&#x3002;
+&#x9996;&#x5148;&#x5B8C;&#x6210;&#x521D;&#x59CB;&#x53E5;&#xFF0C;&#x6307;&#x8FF4;&#x5708;&#x8B8A;&#x6578;&#x7684;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x518D;&#x4F86;&#x5224;&#x65B7;&#x689D;&#x4EF6;&#x53E5;&#xFF0C;&#x6AA2;&#x67E5;&#x8FF4;&#x5708;&#x8B8A;&#x6578;&#x662F;&#x5426;&#x7B26;&#x5408;&#x689D;&#x4EF6;&#xFF0C;&#x82E5;&#x70BA;true&#x5247;&#x57F7;&#x884C;&#x5340;&#x584A;&#x78BC;&#xFF0C;&#x70BA;false&#x5247;&#x4E2D;&#x65B7;&#x8FF4;&#x5708;(<strong><font color="red">*&#x82E5;&#x689D;&#x4EF6;&#x53E5;&#x7121;&#x689D;&#x4EF6;&#x8A2D;&#x5B9A;&#x5C07;&#x56DE;&#x50B3;true&#x5F62;&#x6210;&#x7121;&#x9650;&#x8FF4;&#x5708;</font></strong>&lt;/font&gt;)
+&#xFF0C;&#x6700;&#x5F8C;&#x57F7;&#x884C;&#x905E;&#x589E;&#x53E5;&#xFF0C;&#x7576;&#x5340;&#x584A;&#x78BC;&#x57F7;&#x884C;&#x5B8C;&#x5F8C;&#x518D;&#x56DE;&#x5230;&#x8FF4;&#x5708;&#x5224;&#x65B7;&#x689D;&#x4EF6;&#x53E5;&#x76F4;&#x5230;&#x7D50;&#x679C;&#x70BA;false&#x4E2D;&#x65B7;&#x8FF4;&#x5708;&#x3002;  </li>
+<li>&#x53E6;&#x4E00;&#x7A2E;&#x70BA;for in &#xFF0C;&#x53EF;&#x5217;&#x51FA;&#x7269;&#x4EF6;&#x8CC7;&#x8A0A;&#xFF0C;&#x6BCF;&#x8F2A;&#x8FF4;&#x5708;&#x5747;&#x628A;&#x7269;&#x4EF6;&#x5C6C;&#x6027;&#x7684;&#x540D;&#x7A31;&#x6307;&#x6D3E;&#x7D66;&#x8B8A;&#x6578;&#x3002;  </li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = {name : <span class="hljs-string">&quot;thomas&quot;</span> , age : <span class="hljs-number">18</span>}
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> a <span class="hljs-keyword">in</span> obj){
+  <span class="hljs-built_in">console</span>.log(obj[a]);
+}
+<span class="hljs-comment">// thomas</span>
+<span class="hljs-comment">// 18</span>
+</code></pre>
+<h4 id="do&#x8FF4;&#x5708;"><strong>do&#x8FF4;&#x5708;</strong></h4>
+<p>do&#x8FF4;&#x5708;&#x5F88;&#x50CF;while&#xFF0C;&#x5DEE;&#x7570;&#x5728;&#x65BC;&#x6703;<font color="red"><strong>&#x5148;&#x76F4;&#x63A5;&#x57F7;&#x884C;&#x5340;&#x584A;&#x78BC;&#xFF0C;&#x518D;&#x5224;&#x65B7;&#x904B;&#x7B97;&#x5F0F;&#x7D50;&#x679C;</strong><font>&#xFF0C;&#x6240;&#x4EE5;&#x81F3;&#x5C11;&#x6703;&#x57F7;&#x884C;&#x4E00;&#x6B21;&#x5340;&#x584A;&#x78BC;&#x3002;  </font></font></p>
+<hr>
+<h4 id="try&#x6558;&#x8FF0;"><strong>try&#x6558;&#x8FF0;</strong></h4>
+<p>try&#x6558;&#x8FF0;&#x57F7;&#x884C;&#x4E00;&#x500B;&#x5340;&#x584A;&#x78BC;&#xFF0C;&#x4E26;&#x6355;&#x6349;&#x4EFB;&#x4F55;&#x7531;&#x5340;&#x584A;&#x4E1F;&#x51FA;&#x4F86;&#x7684;exception&#x3002; catch&#x5B50;&#x53E5;&#x5B9A;&#x7FA9;&#x4E86;<strong>&#x63A5;&#x6536;exception&#x7684;&#x8B8A;&#x6578;</strong>&#x3002;  </p>
+<h4 id="throw&#x6558;&#x8FF0;"><strong>throw&#x6558;&#x8FF0;</strong></h4>
+<p>throw&#x6558;&#x8FF0;&#x8CA0;&#x8CAC;&#x767C;&#x51FA;exception&#x3002; &#x7576;try&#x5340;&#x584A;&#x57F7;&#x884C;&#x5230;throw&#x6642;&#xFF0C;&#x63A7;&#x5236;&#x6B0A;&#x5C07;&#x4EA4;&#x7D66;catch&#x53E5;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">try</span>{
+<span class="hljs-keyword">throw</span> <span class="hljs-string">&quot;&#x6211;&#x932F;&#x4E86;&quot;</span>;
+}<span class="hljs-keyword">catch</span>(error){
+<span class="hljs-built_in">console</span>.log(error);
+};
+<span class="hljs-comment">// &#x6211;&#x932F;&#x4E86;</span>
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x4E00;&#x4E9B;&#x65B9;&#x5F0F;&#x53BB;&#x6355;&#x6349;&#x932F;&#x8AA4;  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">3</span> ;
+<span class="hljs-keyword">try</span>
+  {
+   <span class="hljs-keyword">if</span>(x==<span class="hljs-string">&quot;&quot;</span>)     <span class="hljs-keyword">throw</span> <span class="hljs-string">&quot;empty&quot;</span>;
+   <span class="hljs-keyword">if</span>(<span class="hljs-built_in">isNaN</span>(x))  <span class="hljs-keyword">throw</span> <span class="hljs-string">&quot;not a number&quot;</span>;
+   <span class="hljs-keyword">if</span>(x&gt;<span class="hljs-number">10</span>)      <span class="hljs-keyword">throw</span> <span class="hljs-string">&quot;too high&quot;</span>;
+   <span class="hljs-keyword">if</span>(x&lt;<span class="hljs-number">5</span>)       <span class="hljs-keyword">throw</span> <span class="hljs-string">&quot;too low&quot;</span>;
+  }
+<span class="hljs-keyword">catch</span>(error)
+  {
+   <span class="hljs-built_in">console</span>.log(error);
+  }
+<span class="hljs-comment">// &quot;too low&quot;</span>
+</code></pre>
+<h4 id="return&#x6558;&#x8FF0;"><strong>return&#x6558;&#x8FF0;</strong></h4>
+<p>return&#x6558;&#x8FF0;&#x4F7F;&#x51FD;&#x5F0F;&#x63D0;&#x65E9;&#x56DE;&#x50B3;&#x3002; <font color="red"><strong>&#x82E5;&#x672A;&#x6307;&#x5B9A;return&#x88E1;&#x7684;&#x904B;&#x7B97;&#x5F0F;&#xFF0C;&#x5247;&#x56DE;&#x50B3;undefined&#x3002;</strong><font>  </font></font></p>
+<h3 id="&#x904B;&#x7B97;&#x5F0F;-expresstions"><strong>&#x904B;&#x7B97;&#x5F0F; Expresstions</strong></h3>
+<p>&#x904B;&#x7B97;&#x5F0F;&#x5305;&#x62EC;&#x4E86; &#x5BE6;&#x5B57;&#x503C;(literal value&#xFF0C;&#x4F8B;&#x5982;&#x4E00;&#x500B;&#x5B57;&#x4E32;&#x6216;&#x6578;&#x5B57;)&#x3001;&#x5167;&#x5EFA;&#x503C;(true&#x3001;false&#x3001;null&#x3001;undefined&#x3001;NaN&#x3001;Infinity)&#x3001;new&#x5F8C;&#x63A5;&#x547C;&#x53EB;&#x904B;&#x7B97;&#x5F0F;&#x3001;delete&#x5F8C;&#x63A5;&#x7CBE;&#x78BA;&#x904B;&#x7B97;&#x5F0F;&#x3001;&#x4EE5;&#x62EC;&#x865F;&#x570D;&#x8D77;&#x7684;&#x904B;&#x7B97;&#x5F0F;&#x3001;&#x63A5;&#x6709;&#x5B57;&#x9996;&#x8A5E;&#x904B;&#x7B97;&#x5B50;&#x7684;&#x904B;&#x7B97;&#x5F0F;&#xFF0C;&#x6216;&#x5F0F;&#x63A5;&#x4E0B;&#x5217;&#x53EF;&#x80FD;&#x6027;&#x7684;&#x904B;&#x7B97;&#x5F0F;&#xFF1B;  </p>
+<ul>
+<li>&#x5D4C;&#x5165;&#x5F0F;&#x904B;&#x7B97;&#x5B50;&#x548C;&#x5176;&#x4ED6;&#x904B;&#x7B97;&#x5F0F;</li>
+<li>? &#x4E09;&#x5143;&#x904B;&#x7B97;&#x5B50;&#x5F8C;&#x63A5;&#x53E6;&#x4E00;&#x500B;&#x904B;&#x7B97;&#x5F0F;&#xFF0C;&#x63A5;&#x4E0B;&#x4F86;&#x662F; : &#xFF0C;&#x518D;&#x63A5;&#x4E0A;&#x53E6;&#x4E00;&#x500B;&#x904B;&#x7B97;&#x5F0F;</li>
+<li>&#x4E00;&#x500B;&#x547C;&#x53EB;&#x5F0F;  </li>
+<li>&#x4E00;&#x500B;&#x7CBE;&#x78BA;&#x5F0F;  </li>
+</ul>
+<h4 id="&#x904B;&#x7B97;&#x5B50;&#x512A;&#x5148;&#x9806;&#x5E8F;">&#x904B;&#x7B97;&#x5B50;&#x512A;&#x5148;&#x9806;&#x5E8F;</h4>
+<p>&#x6700;&#x4E0A;&#x9762;&#x70BA;&#x512A;&#x5148;&#x9806;&#x5E8F;&#x6700;&#x9AD8;&#x7684;&#x904B;&#x7B97;&#x5B50;&#xFF0C;&#x5F80;&#x4E0B;&#x4EE5;&#x6B64;&#x985E;&#x63A8;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x904B;&#x7B97;&#x5B50;&#x4EE3;&#x8868;&#x865F;</th>
+<th style="text-align:center">&#x4E2D;&#x6587;&#x89E3;&#x91CB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">.&#x3001;[]&#x3001;()</td>
+<td style="text-align:center">&#x7CBE;&#x78BA;&#x8207;&#x547C;&#x53EB;</td>
+</tr>
+<tr>
+<td style="text-align:center">delete&#x3001;new&#x3001;typeof&#x3001;+&#x3001;-&#x3001;!</td>
+<td style="text-align:center">&#x55AE;&#x5143;&#x904B;&#x7B97;&#x5B50;</td>
+</tr>
+<tr>
+<td style="text-align:center">*&#x3001;/&#x3001;%</td>
+<td style="text-align:center">&#x4E58;&#x3001;&#x9664;&#x3001;&#x9918;&#x6578;</td>
+</tr>
+<tr>
+<td style="text-align:center">+&#x3001;-</td>
+<td style="text-align:center">&#x52A0;/&#x76F8;&#x9023;&#x3001;&#x6E1B;</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;=&#x3001;&lt;=&#x3001;&gt;&#x3001;&lt;</td>
+<td style="text-align:center">&#x4E0D;&#x76F8;&#x7B49;</td>
+</tr>
+<tr>
+<td style="text-align:center">===&#x3001;!==</td>
+<td style="text-align:center">&#x76F8;&#x7B49;</td>
+</tr>
+<tr>
+<td style="text-align:center">&amp;&amp;</td>
+<td style="text-align:center">&#x908F;&#x8F2F;&#x904B;&#x7B97;&#x5143; AND</td>
+</tr>
+<tr>
+<td style="text-align:center">?&#x3001;:</td>
+<td style="text-align:center">&#x4E09;&#x5143;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x5B57;&#x9996;&#x904B;&#x7B97;&#x5B50;">&#x5B57;&#x9996;&#x904B;&#x7B97;&#x5B50;</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x904B;&#x7B97;&#x5B50;&#x7B26;&#x865F;</th>
+<th style="text-align:center">&#x7528;&#x9014;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">typeof</td>
+<td style="text-align:center">&#x986F;&#x793A;type</td>
+</tr>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:center">&#x7528;&#x65BC;&#x6578;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:center">&#x8CA0;&#x865F;</td>
+</tr>
+<tr>
+<td style="text-align:center">!</td>
+<td style="text-align:center">&#x908F;&#x8F2F;NOT</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>typeof&#x6709;&#x516D;&#x7A2E;&#x578B;&#x614B; : &apos;number&apos;&#x3001;&apos;string&apos;&#x3001;&apos;boolean&apos;&#x3001;&apos;undefined&apos;&#x3001;&apos;function&apos;&#x3001;&apos;object&apos;&#x3002;
+<strong><font color="red">&#x6703;&#x9047;&#x5230;&#x4E00;&#x7A2E;&#x60C5;&#x6CC1;&#xFF0C;&#x904B;&#x7B97;&#x5143;&#x5982;&#x679C;&#x70BA;&#x9663;&#x5217;&#x6216;null&#xFF0C;&#x5247;&#x6703;&#x986F;&#x793A;object<font></font></font></strong>  </li>
+</ul>
+<h4 id="&#x5BE6;&#x5B57;-literal"><strong>&#x5BE6;&#x5B57; Literal</strong></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5BE6;&#x5B57;&#x7A2E;&#x985E;</th>
+<th style="text-align:center">&#x5BE6;&#x5B57;&#x4EE3;&#x8868;&#x7B26;&#x865F;</th>
+<th style="text-align:center">&#x5BE6;&#x5B57;&#x5BEB;&#x6CD5;&#x7BC4;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x6578;&#x503C;&#x5BE6;&#x5B57;</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">a = 1</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5B57;&#x4E32;&#x5BE6;&#x5B57;</td>
+<td style="text-align:center">&quot;  &quot;  (&#x4E00;&#x5C0D;&#x96D9;&#x5F15;&#x865F;&#x6216;&#x55AE;&#x5F15;&#x865F;)</td>
+<td style="text-align:center">str = &quot;hello&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7269;&#x4EF6;&#x5BE6;&#x5B57;</td>
+<td style="text-align:center">{}  (&#x5927;&#x62EC;&#x865F;)</td>
+<td style="text-align:center">obj = {}</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x9663;&#x5217;&#x5BE6;&#x5B57;</td>
+<td style="text-align:center">[]  (&#x4E2D;&#x62EC;&#x865F;)</td>
+<td style="text-align:center">arr = []</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x51FD;&#x5F0F;</td>
+<td style="text-align:center">(){}</td>
+<td style="text-align:center">function fun(){}</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x6B63;&#x898F;&#x904B;&#x7B97;&#x5F0F;</td>
+<td style="text-align:center">//</td>
+<td style="text-align:center">/[0~9]/gi</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="good_parts.html" class="navigation navigation-prev " aria-label="Previous page: 1.優良部分">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="objects.html" class="navigation navigation-next " aria-label="Next page: 3.物件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.文法","level":"1.3","depth":1,"next":{"title":"3.物件","level":"1.4","depth":1,"path":"source/objects.md","ref":"source/objects.md","articles":[]},"previous":{"title":"1.優良部分","level":"1.2","depth":1,"path":"source/good_parts.md","ref":"source/good_parts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"source/grammar.md","mtime":"2017-01-06T02:01:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-06T05:56:57.586Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
