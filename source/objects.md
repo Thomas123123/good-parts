@@ -128,7 +128,7 @@ obj.hasOwnProperty("num") ;         //true
 obj.hasOwnProperty("toString") ;    //false
 ```
 
-### **列舉 reflect**
+### **列舉 Enumeration**
 
 可利用for in來檢視object裡的屬性明細(name和value)，
 
